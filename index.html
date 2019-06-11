@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vue Product app</title>
+    <script src="https://unpkg.com/vue"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+  </head>
+  <body>
+    <div class="nav-bar"></div>
+    <div id="app">
+      <div class="cart"><p>Cart({{ cart.length }})</p></div>
+      <product :premium="premium" @add-to-cart="updateCart"></product>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
